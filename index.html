@@ -3,6 +3,66 @@
 <html>
 
     <head>
+        <h1>Сайт для подачи заявок</h1>
+        <form >
+
+            <fieldset>
+                <legend>Регестрация</legend>
+        <form action="">
+            <label for="first name">Имя:</label><br>
+            <input type="text" id="first name" name="first name"
+                rows="5" cols="20" placeholder="Ваше имя" required><br><br>
+
+            <label for="last name">Фамилия:</label>
+            <input type="text" id="last name" name="last name"
+            rows="5" cols="20" placeholder="Ваша фамилия" required><br><br>
+
+             <form action="/send" method="post">
+            <label for="Topic">Выберите город...</label>
+            <select name="Topic" required>
+                <option value="" disabled selected >--выберите город--</option>
+                <option value="Moscow" >Москва</option>
+                <option value="Volgograd" >Волгоград</option>
+                <option value="Ufa" >Уфа</option>
+                <option value="Spb" >Санкт-Петербург</option>
+                <option value="Kazan" >Казань</option>
+                <option value="Rostov" >Ростов</option>
+            </select>
+            
+            </form>
+
+            <form >
+                <label for="birth">Дата рождения:</label>
+                <input type="date" id="birth" name="birthdate">
+            </form>
+
+            <form>
+                <label for="age">Возраст:</label>
+                <input type="number" id="age" name="age">
+            </form>
+
+            <form>
+                <p>Ваш пол:</p>
+                <label><input type="radio" name="gender" value="male">Мужской</label>
+                <label><input type="radio" name="gender" value="female">Женский</label>
+            </form>
+
+        <form action="">
+            <label for="number">Номер телефона:</label><br>
+            <input type="text" id="number" name="number"
+                rows="5" cols="20" placeholder="+79999999999" required><br><br>
+
+                <label for="login">Логин:</label><br>
+            <input type="text" id="login" name="login"
+                rows="5" cols="20" placeholder="login123" required><br><br>
+
+        </form>
+
+        <form>
+            <label for="pass">Пароль:</label>
+            <input type="password" id="pass" name="password">
+        </form>
+
         <form>
 
             <fieldset>
@@ -22,9 +82,9 @@
             <label for="Topic">Выберите тему...</label>
             <select name="Topic" required>
                 <option value="" disabled selected >Выберите тему</option>
-                <option value="dog" >Собака</option>
-                <option value="cat" >Кошка</option>
-                <option value="pig" >Свинья</option>
+                <option value="report" >Жалоба</option>
+                <option value="application" >Заявка</option>
+                <option value="offer" >Предложение</option>
             </select>
         </form>
 
@@ -41,5 +101,4 @@
     <body>
         
     </body>
-
 </html>

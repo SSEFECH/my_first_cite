@@ -3,6 +3,7 @@
 <html>
 
     <head>
+        <main>
         <h1>Сайт обо мне!</h1>
         <p>Сайт создан для <b>Артамонова Матвей</b> </p>
 
@@ -26,7 +27,7 @@
         <form >
 
             <fieldset>
-                <legend>Регистрация</legend>
+                <legend><b>Регистрация</b></legend>
         <form action="">
             <label for="first name">Имя:</label><br>
             <input type="text" id="first name" name="first name"
@@ -46,46 +47,36 @@
                 <option value="Spb" >Санкт-Петербург</option>
                 <option value="Kazan" >Казань</option>
                 <option value="Rostov" >Ростов</option>
-            </select>
-            
-            </form>
+            </select> 
 
-            <form >
+            <div>
                 <label for="birth">Дата рождения:</label>
-                <input type="date" id="birth" name="birthdate">
-            </form>
+                <input type="date" id="birth" name="birthdate"> 
+            </div>
+            
 
-            <form>
                 <label for="age">Возраст:</label>
                 <input type="number" id="age" name="age">
-            </form>
 
-            <form>
                 <p>Ваш пол:</p>
                 <label><input type="radio" name="gender" value="male">Мужской</label>
                 <label><input type="radio" name="gender" value="female">Женский</label>
-            </form>
-
+    <div>
         <form action="">
             <label for="number">Номер телефона:</label><br>
             <input type="text" id="number" name="number"
                 rows="5" cols="20" placeholder="+79999999999" required><br><br>
+    </div>
 
                 <label for="login">Логин:</label><br>
             <input type="text" id="login" name="login"
                 rows="5" cols="20" placeholder="login123" required><br><br>
 
-        </form>
-
-        <form>
             <label for="pass">Пароль:</label>
             <input type="password" id="pass" name="password">
-        </form>
 
-        <form>
-
-            <fieldset>
-                <legend>Свяжитесь со мной</legend>
+                <legend><h2>Свяжитесь со мной</h2></legend>
+                
         <form action="">
             <label for="username">Имя:</label><br>
             <input type="text" id="username" name="username"
@@ -95,8 +86,6 @@
             <input type="email" id="email" name="email"
             rows="5" cols="20" placeholder="example@mail.com" required><br><br>
 
-        </form>
-
         <form action="/send" method="post">
             <label for="Topic">Выберите тему...</label>
             <select name="Topic" required>
@@ -105,16 +94,15 @@
                 <option value="application" >Заявка</option>
                 <option value="offer" >Предложение</option>
             </select>
-        </form>
-
+        
         <form action="/send" method="post">
             <label for="message">Сообщение:</label><br>
             <textarea id="message" name="message"
                 rows="5" cols="20" placeholder="Введите Сообщение..." required></textarea><br><br>
             <button type="sumbit">Отправить Сообщение</button>
         </form>
-            </fieldset>
-        </form>
+        
+        </main>
     </head>
 
     <body>
